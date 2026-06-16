@@ -1,0 +1,14 @@
+Drug abuse
+
+crimes
+
+Drug abuse crimes. Drug abuse is defined as the violation of laws prohibiting the production, distribution, and/or use of certain controlled substances and the equipment or devices utilized in their preparation and/or use. While not defined as a major crime, drug abuse rates are included here to show policing and enforcement patterns that may be disproportate to the true underlying rate of use by different populations.
+
+Time Period2001—2025
+
+Geographic Layers Chicago, ZIP Codes, Census Tracts, and Community areas
+
+Categories Community Safety (Physical Environment)
+
+Technical Notes about this topic:
+UCR codes are from http://gis.chicagopolice.org/clearmap_crime_sums/crime_types.html. See also the associated crime rate, which is adjusted for population and allows comparison across places.
