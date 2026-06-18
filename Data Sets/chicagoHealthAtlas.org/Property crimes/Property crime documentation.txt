@@ -1,0 +1,12 @@
+Property crime
+
+Property crimes. Includes burglary, larceny, motor vehicle theft, and arson crimes.
+
+Time Period1979—2025
+
+Geographic Layers Chicago, ZIP Codes, Census Tracts, and Community areas
+
+Categories Community Safety (Physical Environment)
+
+Technical Notes about this topic:
+UCR codes are from http://gis.chicagopolice.org/clearmap_crime_sums/crime_types.html. See also the associated crime rate, which is adjusted for population and allows comparison across places.

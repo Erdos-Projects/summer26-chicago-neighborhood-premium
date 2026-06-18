@@ -1,0 +1,15 @@
+Population
+
+residents
+
+Average population over the time period.
+Time Period2005—2024
+
+Geographic Layers Chicago, ZIP Codes, Census Tracts, and Community areas
+
+Categories Population (Demography)
+
+Technical Notes about this topic:
+To see a breakdown of population by percentage, use PCT.
+
+Data for decennial years (1990, 2000, 2010, 2020, etc.) comes from the Decennial Census, which represents a complete count of all residents, as opposed to an estimate based on a survey. Data for all other years and 5-year periods comes from the American Community Survey. For this reason, you may see large apparent changes in population every 10 years, because the Decennial Census allows the ACS to re-adjust its population estimates, which gradually become less accurate over the decade. However, the population estimates from the ACS are still the best-available estimates of population in those intervening years.

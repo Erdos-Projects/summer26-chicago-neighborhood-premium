@@ -1,0 +1,17 @@
+Unemployment rate
+
+%
+
+Percent of residents 16 and older in the civilian labor force who are actively seeking employment.
+Time Period2005—2024
+
+Geographic Layers Chicago, ZIP Codes, Census Tracts, and Community areas
+
+Categories Employment (Social and Economic Factors)
+
+Technical Notes about this topic:
+This is the "simple" or U-3 unemployment rate, similar to the one most commonly cited in the media. Because this unemployment rate comes from Census data, it may differ from the Bureau of Labor Statistics one released each month to great fanfare. Both this rate and the BLS one have been criticized for painting an unduly rosy picture of the labor market by:
+
+Excluding people who have become discouraged and stopped actively looking for jobs
+Treating temporary and part-time workers who cannot find full-time employment as "employed"
+Because this Census estimate is an annual or five-year average unemployment rate, it is automatically seasonally adjusted.
