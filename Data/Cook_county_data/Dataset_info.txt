@@ -1,0 +1,33 @@
+Wiki website for open data: https://github.com/ccao-data/wiki/blob/master/SOPs/Open-Data.md 
+Website has the description of all columns that I have compiled in the file "column_dictionary.md"
+4 datasets selected: parcel sales (main dataset), parcel proximity (for local neighbourhood parameters), 
+parcel universe (for geographic data), and home improvements (house characteristics)
+parcel = a legal unit of property
+pin = Parcel Identification Number : an identification number for all chicago properties. Normally a 14 digit number. 
+https://www.cookcountyclerkil.gov/property-taxes/about-property-index-number-pin
+
+My downloads: 
+sales dataset: All columns, all years 1999 - present (Size: 500 MB)
+improvements dataset: Only 2021-2025 data (data recording changed in 2021). (size: 2 GB)
+proximity dataset: full download (size: 8 GB)
+universe dataset: 2021-2025 data, 24 relevant columns downloaded. (Size: 2 GB)
+
+Total size of 4 datasets is in 10s of GBs with millions of rows and around 200 columns in total
+
+Idea:   Combine all these datasets in a way that make it manageable
+	Confined to chicago area: township codes 70-77
+	Only single family houses and arms length sales included (sale price >10k, deed type filter: see website), dropped multi-family and condos
+	year 2021-2025 (home improvements dataset tracking changed in 2021. Hard to find details about pre-2021 record (~1.3k rows so ignoring for now)
+	Selected 82 columns (used AI, then verified manually: dropped administrative data, metadata, duplicates, and non-relevant for single family columns)
+----> Ended up with only 58k rows and 82 columns. File size: 19 MB
+----> Total sales rows: 2.6 M -> 2021-2025: 400k -> 70-77 townships: 150k -> single family: 58k 
+
+Some leading zeroes in pin are dropped when reading the csv file, fixed by the so called zero-padding.
+Join sales data with improvement data: Single family flag applied. For a given PIN, join with the most recent improvement row (using pd.merge_asof()). 
+--> This avoids scenarios where a 2021 sale would use the characteristics of 2024 improvement work, or outdated work from 
+Join with proximity and universe data on PIN and year --> Row numbers remain unchanged after join. Both datasets have almost all PIN entries for each year.
+The proximity dataset has only pin10 values. pin10 is just the first 10 digits of normally 14 digit pin. Last 4 digits are relevant only for condos.
+
+The final joined dataset "chicago_sales_modeling" saved in parquet format to preserve the leading zeros, and the data formats of each column. 
+The size is reduced compared to csv, some data types are redefined. I have also uploaded a small notebook "explore_joined_dataset.ipynb" to explore basic 
+information about the dataset. 

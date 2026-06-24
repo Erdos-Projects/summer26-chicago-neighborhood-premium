@@ -1,0 +1,20 @@
+Traffic intensity
+
+distance-weighted vehicles
+
+A measure of proximity to vehicle traffic, defined as the annual average of the daily count of vehicles within 500 meters, divided by their distance in meters. Higher values indicate higher exposure to heavy traffic.
+Time Period2013—2020
+
+Geographic Layers Chicago, ZIP Codes, Census Tracts, and Community areas
+
+Categories Housing & Transit (Physical Environment) and Pollution (Physical Environment)
+
+Technical Notes about this topic:
+The year in Metopio reflects the underlying year of the data, not the year the data was released.
+
+This topic essentially measures how many vehicles pass by 1/2 kilometer of the average location within a geography, with emphasis on vehicles passing closer by. A value of 50 (which is close to the average value in the US) could mean 500 vehicles per day, on a road 10 meters away, or it could mean 5,000 vehicles per day on a road 100 meters away, or 25,000 vehicles per day (one every three seconds) on a highway 1/2 kilometer away. Proximity is defined relative to the centroid of the Census block, then aggregated up into larger geographic units.
+
+See EJH for a weighted version of this topic, especially if you are concerned with the impact of this topic on vulnerable populations.
+
+Proximity to motor vehicle traffic is associated with increased exposures to ambient noise, toxic gases and particulate matter including diesel particulates. Residential proximity to traffic has been associated with various health impacts, particularly asthma exacerbation and possibly onset of asthma, as well as mortality rates.
+

@@ -1,0 +1,13 @@
+Aggravated assault/battery
+
+crimes
+
+Aggravated assault and aggravated battery crimes. Aggravated assault is an unlawful attack by one person upon another, wherein the offender displays a weapon in a threatening manner. Aggravated battery is the physical attack itself, wherein the offender uses a weapon or the victim suffers obvious severe or aggravated bodily injury involving apparent broken bones, loss of teeth, possible internal injury, severe laceration, or loss of consciousness.
+Time Period1979—2025
+
+Geographic Layers Chicago, ZIP Codes, Census Tracts, and Community areas
+
+Categories Community Safety (Physical Environment)
+
+Technical Notes about this topic:
+UCR codes are from http://gis.chicagopolice.org/clearmap_crime_sums/crime_types.html. See also the associated crime rate, which is adjusted for population and allows comparison across places.

@@ -1,0 +1,15 @@
+lifetime risk per million
+
+Estimated lifetime risk of developing cancer as a result of inhaling carcinogenic compounds in the environment, per million people.
+Time Period1999—2020
+
+Geographic Layers Chicago, ZIP Codes, Census Tracts, and Community areas
+
+Categories Pollution (Environmental) and Cancer (Health Outcomes)
+
+Technical Notes about this topic:
+The year in Metopio reflects the underlying year of the data, not the year the data was released.
+
+See EJQ for a weighted version of this topic, especially if you are concerned with the impact of this topic on vulnerable populations.
+
+This is a modeled estimate based on exposure to 138 carcinogens, and not derived from actual cancer statistics.

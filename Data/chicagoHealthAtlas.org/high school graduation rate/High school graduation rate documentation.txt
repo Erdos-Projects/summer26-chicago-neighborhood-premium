@@ -1,0 +1,27 @@
+High school graduation rate
+
+% of residents
+
+Residents 25 or older with at least a high school degree: including GED and any higher education
+Time Period2005—2024
+
+Geographic Layers Chicago, ZIP Codes, Census Tracts, and Community areas
+
+Categories Education (Social and Economic Factors)
+
+U.S. Census Bureau - American Community Survey (ACS) 
+ Table B15002
+
+The American Community Survey (ACS) is an ongoing survey of U.S. households and residents that provides a wide variety of information. It replaces the long-form Census questionnaire and is administered to 1 in 38 U.S. households each year. Responses from multiple years can be aggregated to provide information about very small geographies.
+
+Technical Notes
+Data for single-year time periods is only available for geographies with about 65,000 residents or more. For smaller counties, cities and towns, and for all ZIP codes and Census tracts, only five-year time periods are available.
+
+The ACS is conducted in the United States and in Puerto Rico. In Puerto Rico the survey is called the Puerto Rico Community Survey.
+
+Detailed information about definitions in the American Community Survey can be found here.
+
+Though answering the American Community Survey is required by law, it does not have a 100% response rate.
+
+Note on 2020 Release
+The 2020 ACS release was significantly reduced in scope (for 1-year data) and delayed (for 5-year data) so that the Census Bureau could "minimize the impact of nonresponse bias due to the COVID-19 pandemic." We did not curate the 1-year data from 2020 for this reason. The 5-year data is much less affected than 1-year data, because the impact of the pandemic was spread out over a longer time period. However, any ACS data that includes the time period of the COVID-19 pandemic and its resulting data collection disruptions will have significant issues in accuracy and relevance. For instance, at the start of the pandemic the United States suffered one of the worst spikes in employment in its history--followed by one of the fastest recoveries in history. Different survey-takers would report significantly different economic situations based on when they were surveyed throughout that time period. See here for more information.
