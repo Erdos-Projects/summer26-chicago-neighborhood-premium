@@ -1,1 +1,0 @@
-The data in this folder was found on https://www.zillow.com/research/data/ using the Home Values section with ZHVI All Homes (SFR,CondoCo-op) Time Series,Smoothed, Seasonally Adjusted($).
