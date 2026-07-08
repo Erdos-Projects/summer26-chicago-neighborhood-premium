@@ -5,3 +5,13 @@ This repository contains a project for the Summer 2026 Erdős Institute Data Sci
 Like many major cities, Chicago is comprised of many smaller neighborhoods each with its own culture and attractions. There are 77 officially recognized neighborhoods in Chicago, and even neighborhhods which are very close geographically such as Kenwood and Washington Heights can be readically different. The goal of this project is to get a measure of the premium homebuyers pay in order to get a home in each of the neighborhoods. We focused on single family homes, and since there are few of these in the Loop neighborhood of Chicago we did not include this neighborhood. This is both a measure of how much contractors can expect to gain/lose by building in a specific neighborhood as well as an indicator of the benifits of living in each neighborhood not captured by our list of features.
 
 For our final model, we used the XGBoost gradient boosted tree classifier to get a predicted price of a single family home using several variables, one of which is the community area. We then computed the partial dependency function for this model for each of the community areas. The premium payed to buy in each area is then taken to be the partial dependancy function for each comunity area minus the average price payed over all of Chicago over the last 5 years. 
+
+## Final results
+
+Our target variable is the price which a house sold for. Our final model achieved the following accuracy statistics when measured on a test set of values:
+
+*Pearson's $R^2$ score: $0.8820$
+*Mean average error: $85898.0078$
+*Root mean squared error: $146825.5969$
+
+For context for these last two numbers, the mean house price over this period was $422376.09$. 
