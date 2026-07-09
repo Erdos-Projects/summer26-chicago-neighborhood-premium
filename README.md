@@ -14,4 +14,10 @@ Our target variable is the price which a house sold for. Our final model achieve
 *Mean average error: $85898.0078$
 *Root mean squared error: $146825.5969$
 
-For context for these last two numbers, the mean house price over this period was $422376.09$. 
+For context for these last two numbers, the mean house price over this period was $422376.09$. Below is a list of features we used together with their relative importance in our model:
+
+![Model feature by importance](assets/feature_importance_plot.png)
+
+From this we see that the dominant feature is the community area, and so it is reasonable to use our model for the purposes of studying the effect of the neighborhood on housing price. The heatmap our partial dependency produces is below:
+
+![Model festur heatmap](assets/Tree_Model_Diff_From_Mean_Alt_color.png)
