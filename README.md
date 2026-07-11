@@ -43,3 +43,5 @@ Our code is collected in the following notebooks:
 * explore_joined_dataset.ipynb                          : EDA
 * Checking Sale Price vs Assessmed Value.ipynb          : Comparing home sales price to tax assessed price. They are different
                                                             enough that we decided to focus on only one of the two, sales price.
+* Model_Failures_Test.ipynb                             : Check if there are patterns in model errors, shows potential improvements    
+                                                            to be made in the next stage                                 
