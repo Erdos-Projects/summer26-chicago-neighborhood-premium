@@ -10,9 +10,9 @@ For our final model, we used the XGBoost gradient boosted tree classifier to get
 
 Our target variable is the price which a house sold for. Our final model achieved the following accuracy statistics when measured on a test set of values:
 
-*Pearson's $R^2$ score: $0.8820$
-*Mean average error: $85898.0078$
-*Root mean squared error: $146825.5969$
+* Pearson's $R^2$ score: $0.8820$
+* Mean average error: $85898.0078$
+* Root mean squared error: $146825.5969$
 
 For context for these last two numbers, the mean house price over this period was $422376.09$. Below is a list of features we used together with their relative importance in our model:
 
@@ -20,4 +20,24 @@ For context for these last two numbers, the mean house price over this period wa
 
 From this we see that the dominant feature is the community area, and so it is reasonable to use our model for the purposes of studying the effect of the neighborhood on housing price. The heatmap our partial dependency produces is below:
 
-![Model festur heatmap](assets/Tree_Model_Diff_From_Mean_Alt_color.png)
+![Model festure heatmap](assets/Tree_Model_Diff_From_Mean_Alt_color.png)
+
+We compare this against a simpler model built from linear regression:
+
+![Hedonic model feature heatmap](assets/Ridge_Regression_Coefficients_Nick_Model.png)
+
+One key point to notice is that unlike the linear regression model, the XGBoost model (correctly) identifies Hyde Park as having a high premium. 
+
+We run a hypothetical business scenario where we have two hypothetical investors who buy a property in the north side of Chicago. They buy a property in 2024 and sell in 2025. The first investor buys in the Licoln Park, the most expensive neighborhood in the north side of Chicago. The second investor uses our model to determine that from 2021-2022 to 2023 the neighborhood in the north side of Chicago whose premium is increasing the fastest is North Center and buys there. The second investor makes $46$ thousand dollars more than the first.
+
+## Notebooks
+
+Our code is collected in the following notebooks:
+
+* Cost_Change.ipynb                                     : Hypothetical investor scenario
+* Hedonic.ipynb                                         : Ridge regression baseline model
+* Model_Selection.ipynb                                 : Hyperparameter tuning for final model
+* Tree_Model.ipynb                                      : Final model training and results
+* Exploring_Alternate_Linear_Regression_Models.ipynb    : Hyperparameter tuning for the baseline ridge regression model
+* build_dataset.ipynb, merging_datasets.ipynb           : Cleaning data from cook county and homicide data
+* explore_joined_dataset.ipynb                          : EDA
