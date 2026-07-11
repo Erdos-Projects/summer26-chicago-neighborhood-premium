@@ -41,3 +41,5 @@ Our code is collected in the following notebooks:
 * Exploring_Alternate_Linear_Regression_Models.ipynb    : Hyperparameter tuning for the baseline ridge regression model
 * build_dataset.ipynb, merging_datasets.ipynb           : Cleaning data from cook county and homicide data
 * explore_joined_dataset.ipynb                          : EDA
+* Checking Sale Price vs Assessmed Value.ipynb          : Comparing home sales price to tax assessed price. They are different
+                                                            enough that we decided to focus on only one of the two, sales price.
