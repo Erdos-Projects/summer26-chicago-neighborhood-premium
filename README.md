@@ -1,4 +1,4 @@
-# summer26-chicago-neighborhood-premium-2
+# summer26-chicago-neighborhood-premium
 Team project: summer26-chicago-neighborhood-premium
 This repository contains a project for the Summer 2026 Erdős Institute Data Science program. 
 
@@ -21,15 +21,15 @@ Our target variable is the price which a house sold for. Our final model achieve
 
 For context for these last two numbers, the mean house price over this period was $422376.09$. Below is a list of features we used together with their relative importance in our model:
 
-![Model feature by importance](Results/final/feature_importance_plot.png)
+![Model feature by importance](results/Final/feature_importance_plot.png)
 
 From this we see that the dominant feature is the community area, and so it is reasonable to use our model for the purposes of studying the effect of the neighborhood on housing price. The heatmap our partial dependency produces is below:
 
-![Model festure heatmap](Results/final/Tree_Model_Diff_From_Mean_Alt_color.png)
+![Model festure heatmap](results/Tree_Model_Diff_From_Mean_Alt_color.png)
 
 We compare this against a simpler model built from linear regression:
 
-![Hedonic model feature heatmap](Results/final/Ridge_Regression_Coefficients_Nick_Model.png)
+![Hedonic model feature heatmap](results/Ridge_Regression_Coefficients_Nick_Model.png)
 
 One key point to notice is that unlike the linear regression model, the XGBoost model (correctly) identifies Hyde Park as having a high premium. 
 
