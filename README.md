@@ -49,4 +49,10 @@ Our code is collected in the following notebooks:
 * Checking Sale Price vs Assessmed Value.ipynb          : Comparing home sales price to tax assessed price. They are different
                                                             enough that we decided to focus on only one of the two, sales price.
 * Model_Failures_Test.ipynb                             : Check if there are patterns in model errors, shows potential improvements    
-                                                            to be made in the next stage                                 
+                                                            to be made in the next stage
+## Repository Structure
+
+* Data : Contains the data and notebooks used to compile the datasets used in our model.
+  * sale_and_crime_data : Contains the final dataset used in our model together with the Dataset_info.txt document describing its inventory and provenance.
+* assets : The graphs and figures we produced as part of this project.
+* notebooks : analysis and modeling notebooks
