@@ -21,15 +21,15 @@ Our target variable is the price which a house sold for. Our final model achieve
 
 For context for these last two numbers, the mean house price over this period was $422376.09$. Below is a list of features we used together with their relative importance in our model:
 
-![Model feature by importance](assets/feature_importance_plot.png)
+![Model feature by importance](Results/final/feature_importance_plot.png)
 
 From this we see that the dominant feature is the community area, and so it is reasonable to use our model for the purposes of studying the effect of the neighborhood on housing price. The heatmap our partial dependency produces is below:
 
-![Model festure heatmap](assets/Tree_Model_Diff_From_Mean_Alt_color.png)
+![Model festure heatmap](Results/final/Tree_Model_Diff_From_Mean_Alt_color.png)
 
 We compare this against a simpler model built from linear regression:
 
-![Hedonic model feature heatmap](assets/Ridge_Regression_Coefficients_Nick_Model.png)
+![Hedonic model feature heatmap](Results/final/Ridge_Regression_Coefficients_Nick_Model.png)
 
 One key point to notice is that unlike the linear regression model, the XGBoost model (correctly) identifies Hyde Park as having a high premium. 
 
@@ -39,20 +39,24 @@ We run a hypothetical business scenario where we have two hypothetical investors
 
 Our code is collected in the following notebooks:
 
-* Cost_Change.ipynb                                     : Hypothetical investor scenario
-* Hedonic.ipynb                                         : Ridge regression baseline model
-* Model_Selection.ipynb                                 : Hyperparameter tuning for final model
-* Tree_Model.ipynb                                      : Final model training and results
+* Investor_analysis.ipynb                               : Hypothetical investor scenario
+* Final_results1_linear.ipynb                           : Ridge regression baseline hedonic model
+* Final_results2_tree.ipynb                             : Xgboost tree final model training and results         
+* Model_tuning.ipynb                                    : Hyperparameter tuning for final model
+* Model_error_analysis.ipynb                            : Check if there are patterns in model errors, potential improvements    
+                                                            to be made in the next stage
+
 * Exploring_Alternate_Linear_Regression_Models.ipynb    : Hyperparameter tuning for the baseline ridge regression model
 * build_dataset.ipynb, merging_datasets.ipynb           : Cleaning data from cook county and homicide data
 * explore_joined_dataset.ipynb                          : EDA
 * Checking Sale Price vs Assessmed Value.ipynb          : Comparing home sales price to tax assessed price. They are different
                                                             enough that we decided to focus on only one of the two, sales price.
-* Model_Failures_Test.ipynb                             : Check if there are patterns in model errors, shows potential improvements    
-                                                            to be made in the next stage
+
 ## Repository Structure
 
 * Data : Contains the data and notebooks used to compile the datasets used in our model.
   * sale_and_crime_data : Contains the final dataset used in our model together with the Dataset_info.txt document describing its inventory and provenance.
-* assets : The graphs and figures we produced as part of this project.
+* Results : The graphs and figures we produced as part of this project.
 * notebooks : analysis and modeling notebooks
+* artifacts : serialized model in .joblib format and how to use it
+* presentation : slides presenting the project and an executive summary
